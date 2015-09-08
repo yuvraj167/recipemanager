@@ -1,0 +1,24 @@
+<p>
+	<h1>Create a new Recipe</h1>
+	<hr/>
+</p>
+
+<div class="row">
+	<div class="well col-md-8 col-md-offset-2">
+		<%= form_for @recipe do |f| %>
+
+			<%= f.label :Name%>
+			<%= f.text_field :name%>
+
+			<%= f.label :Summary%>
+			<%= f.text_field :summary%>
+
+			<%= f.label :Description%>
+			<%= f.text_area :description,rows: 10%>
+
+			<%= f.submit 'Create Recipe', class: "btn btn-success" %>
+
+		<% end%>
+	</div>	
+
+</div>
